@@ -7,7 +7,7 @@ export default function QRCodeGenerator() {
 
   function handleGenerateQrCode() {
     setQrCode(input);
-    setInput('')
+    setInput('');
   }
 
   return (

@@ -1,7 +1,6 @@
-import { useEffect } from "react";
-import { useState } from "react";
-import User from "./user";
+import { useEffect, useState } from "react";
 import './styles.css';
+import User from "./user";
 
 export default function GithubProfileFinder() {
   const [userName, setUserName] = useState("sangammukherjee");
@@ -16,12 +15,12 @@ export default function GithubProfileFinder() {
     if (data) {
       setUserData(data);
       setLoading(false);
-      setUserName('')
+      setUserName('');
     }
   }
 
   function handleSubmit() {
-    fetchGithubUserData()
+    fetchGithubUserData();
   }
 
   useEffect(() => {
