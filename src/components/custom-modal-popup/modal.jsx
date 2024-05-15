@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Modal({ id, header, body, footer, onClose }) {
   return (
     <div id={id || "Modal"} className="modal">

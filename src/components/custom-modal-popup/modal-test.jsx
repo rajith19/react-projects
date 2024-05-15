@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Modal from "./modal";
 import "./modal.css";
+import React from "react";
 
 export default function ModalTest() {
   const [showModalPopup, setShowModalPopup] = useState(false);

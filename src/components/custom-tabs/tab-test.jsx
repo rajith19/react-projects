@@ -1,5 +1,6 @@
 import Tabs from "./tabs";
 import './tabs.css';
+import React from "react";
 
 function RandomComponent() {
   return <h1>Some random content</h1>;

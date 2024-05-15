@@ -1,5 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import featureFlagsDataServiceCall from "../data";
+import React from "react";
 
 export const FeatureFlagsContext = createContext(null);
 

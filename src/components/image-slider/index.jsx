@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import "./styles.css";
+import React from "react";
 
 export default function ImageSlider({ url, limit = 5, page = 1 }) {
   const [images, setImages] = useState([]);
@@ -55,17 +56,17 @@ export default function ImageSlider({ url, limit = 5, page = 1 }) {
       />
       {images && images.length
         ? images.map((imageItem, index) => (
-            <img
-              key={imageItem.id}
-              alt={imageItem.download_url}
-              src={imageItem.download_url}
-              className={
-                currentSlide === index
-                  ? "current-image"
-                  : "current-image hide-current-image"
-              }
-            />
-          ))
+          <img
+            key={imageItem.id}
+            alt={imageItem.download_url}
+            src={imageItem.download_url}
+            className={
+              currentSlide === index
+                ? "current-image"
+                : "current-image hide-current-image"
+            }
+          />
+        ))
         : null}
       <BsArrowRightCircleFill
         onClick={handleNext}
@@ -74,16 +75,16 @@ export default function ImageSlider({ url, limit = 5, page = 1 }) {
       <span className="circle-indicators">
         {images && images.length
           ? images.map((_, index) => (
-              <button
-                key={index}
-                className={
-                  currentSlide === index
-                    ? "current-indicator"
-                    : "current-indicator inactive-indicator"
-                }
-                onClick={() => setCurrentSlide(index)}
-              ></button>
-            ))
+            <button
+              key={index}
+              className={
+                currentSlide === index
+                  ? "current-indicator"
+                  : "current-indicator inactive-indicator"
+              }
+              onClick={() => setCurrentSlide(index)}
+            ></button>
+          ))
           : null}
       </span>
     </div>

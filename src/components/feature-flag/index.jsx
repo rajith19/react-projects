@@ -7,6 +7,7 @@ import TicTacToe from "../tic-tact-toe";
 import TreeView from "../tree-view";
 import menus from "../tree-view/data";
 import { FeatureFlagsContext } from "./context";
+import React from "react";
 
 export default function FeatureFlags() {
   const { loading, enabledFlags } = useContext(FeatureFlagsContext);
