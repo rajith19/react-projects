@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Suggestions from "./suggesstions";
+import React from "react";
 
 export default function SearchAutocomplete() {
   const [loading, setLoading] = useState(false);
@@ -25,10 +26,10 @@ export default function SearchAutocomplete() {
     }
   }
 
-  function handleClick(event){
-    setShowDropdown(false)
-    setSearchParam(event.target.innerText)
-    setFilteredUsers([])
+  function handleClick(event) {
+    setShowDropdown(false);
+    setSearchParam(event.target.innerText);
+    setFilteredUsers([]);
   }
 
   async function fetchListOfUsers() {

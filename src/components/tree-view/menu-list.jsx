@@ -1,4 +1,5 @@
 import MenuItem from "./menu-item";
+import React from "react";
 
 export default function MenuList({ list = [] }) {
   return (

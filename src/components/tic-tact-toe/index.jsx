@@ -4,6 +4,8 @@
 
 import { useEffect, useState } from "react";
 import "./styles.css";
+import React from "react";
+
 
 function Square({ value, onClick }) {
   return (
