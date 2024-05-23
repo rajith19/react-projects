@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./scroll.css";
+import React from "react";
 
 export default function ScrollIndicator({ url }) {
   const [data, setData] = useState([]);
@@ -48,7 +49,7 @@ export default function ScrollIndicator({ url }) {
     window.addEventListener("scroll", handleScrollPercentage);
 
     return () => {
-      window.removeEventListener("scroll", () => {});
+      window.removeEventListener("scroll", () => { });
     };
   }, []);
 

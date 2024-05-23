@@ -1,5 +1,6 @@
 import { useState } from "react";
 import QRCode from "react-qr-code";
+import React from "react";
 
 export default function QRCodeGenerator() {
   const [qrCode, setQrCode] = useState("");

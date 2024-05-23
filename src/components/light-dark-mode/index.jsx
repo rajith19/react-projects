@@ -1,5 +1,6 @@
 import useLocalStroage from "./useLocalStroage";
-import './theme.css'
+import './theme.css';
+import React from "react";
 
 export default function LightDarkMode() {
   const [theme, setTheme] = useLocalStroage("theme", "dark");
